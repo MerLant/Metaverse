@@ -1,0 +1,845 @@
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosCondBlackC";
+    src: url("../fonts/Helios/HeliosCondBlackC-Italic.eot");
+    src: local("HeliosCondBlackC Italic"), local("HeliosCondBlackC-Italic"),
+        url("../fonts/Helios/HeliosCondBlackC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondBlackC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondBlackC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondBlackC-Italic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosExtC";
+    src: url("../fonts/Helios/HeliosExtC.eot");
+    src: local("HeliosExtC"),
+        url("../fonts/Helios/HeliosExtC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtC.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtThinC";
+    src: url("../fonts/Helios/HeliosExtThinC-Italic.eot");
+    src: local("HeliosExtThinC Italic"), local("HeliosExtThinC-Italic"),
+        url("../fonts/Helios/HeliosExtThinC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtThinC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtThinC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtThinC-Italic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosCondThinC";
+    src: url("../fonts/Helios/HeliosCondThinC-Italic.eot");
+    src: local("HeliosCondThinC Italic"), local("HeliosCondThinC-Italic"),
+        url("../fonts/Helios/HeliosCondThinC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondThinC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondThinC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondThinC-Italic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosCondC";
+    src: url("../fonts/Helios/HeliosCondC-BoldItalic.eot");
+    src: local("HeliosCondC Bold Italic"), local("HeliosCondC-BoldItalic"),
+        url("../fonts/Helios/HeliosCondC-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondC-BoldItalic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondC-BoldItalic.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondC-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosC";
+    src: url("../fonts/Helios/HeliosC-Italic.eot");
+    src: local("HeliosC Italic"), local("HeliosC-Italic"),
+        url("../fonts/Helios/HeliosC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosC-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosLightC";
+    src: url("../fonts/Helios/HeliosLightC.eot");
+    src: local("HeliosLightC"),
+        url("../fonts/Helios/HeliosLightC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosLightC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosLightC.woff") format("woff"),
+        url("../fonts/Helios/HeliosLightC.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtLightC";
+    src: url("../fonts/Helios/HeliosExtLightC-Italic.eot");
+    src: local("HeliosExtLightC Italic"), local("HeliosExtLightC-Italic"),
+        url("../fonts/Helios/HeliosExtLightC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtLightC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtLightC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtLightC-Italic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosCondC";
+    src: url("../fonts/Helios/HeliosCondC-Italic.eot");
+    src: local("HeliosCondC Italic"), local("HeliosCondC-Italic"),
+        url("../fonts/Helios/HeliosCondC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondC-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosC";
+    src: url("../fonts/Helios/HeliosC.eot");
+    src: local("HeliosC"), url("../fonts/Helios/HeliosC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosC.woff") format("woff"),
+        url("../fonts/Helios/HeliosC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosCondC";
+    src: url("../fonts/Helios/HeliosCondC-Bold.eot");
+    src: local("HeliosCondC Bold"), local("HeliosCondC-Bold"),
+        url("../fonts/Helios/HeliosCondC-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondC-Bold.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondC-Bold.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondC-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtBlackC";
+    src: url("../fonts/Helios/HeliosExtBlackC-Italic.eot");
+    src: local("HeliosExtBlackC Italic"), local("HeliosExtBlackC-Italic"),
+        url("../fonts/Helios/HeliosExtBlackC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtBlackC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtBlackC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtBlackC-Italic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosLightC";
+    src: url("../fonts/Helios/HeliosLightC-Italic.eot");
+    src: local("HeliosLightC Italic"), local("HeliosLightC-Italic"),
+        url("../fonts/Helios/HeliosLightC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosLightC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosLightC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosLightC-Italic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosExtC";
+    src: url("../fonts/Helios/HeliosExtC-Italic.eot");
+    src: local("HeliosExtC Italic"), local("HeliosExtC-Italic"),
+        url("../fonts/Helios/HeliosExtC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtC-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosUltraCompressedC";
+    src: url("../fonts/Helios/HeliosUltraCompressedC.eot");
+    src: local("HeliosUltraCompressedC"),
+        url("../fonts/Helios/HeliosUltraCompressedC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosUltraCompressedC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosUltraCompressedC.woff") format("woff"),
+        url("../fonts/Helios/HeliosUltraCompressedC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtBlackC";
+    src: url("../fonts/Helios/HeliosExtBlackC.eot");
+    src: local("HeliosExtBlackC"),
+        url("../fonts/Helios/HeliosExtBlackC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtBlackC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtBlackC.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtBlackC.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosCondThinC";
+    src: url("../fonts/Helios/HeliosCondThinC.eot");
+    src: local("HeliosCondThinC"),
+        url("../fonts/Helios/HeliosCondThinC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondThinC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondThinC.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondThinC.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosThinC";
+    src: url("../fonts/Helios/HeliosThinC.eot");
+    src: local("HeliosThinC"),
+        url("../fonts/Helios/HeliosThinC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosThinC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosThinC.woff") format("woff"),
+        url("../fonts/Helios/HeliosThinC.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtC";
+    src: url("../fonts/Helios/HeliosExtC-Bold.eot");
+    src: local("HeliosExtC Bold"), local("HeliosExtC-Bold"),
+        url("../fonts/Helios/HeliosExtC-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtC-Bold.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtC-Bold.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtC-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtraCompressedC";
+    src: url("../fonts/Helios/HeliosExtraCompressedC.eot");
+    src: local("HeliosExtraCompressedC"),
+        url("../fonts/Helios/HeliosExtraCompressedC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtraCompressedC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtraCompressedC.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtraCompressedC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosBlackC";
+    src: url("../fonts/Helios/HeliosBlackC-Italic.eot");
+    src: local("HeliosBlackC Italic"), local("HeliosBlackC-Italic"),
+        url("../fonts/Helios/HeliosBlackC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosBlackC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosBlackC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosBlackC-Italic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosC";
+    src: url("../fonts/Helios/HeliosC-BoldItalic.eot");
+    src: local("HeliosC Bold Italic"), local("HeliosC-BoldItalic"),
+        url("../fonts/Helios/HeliosC-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosC-BoldItalic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosC-BoldItalic.woff") format("woff"),
+        url("../fonts/Helios/HeliosC-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosCondLightC";
+    src: url("../fonts/Helios/HeliosCondLightC.eot");
+    src: local("HeliosCondLightC"),
+        url("../fonts/Helios/HeliosCondLightC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondLightC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondLightC.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondLightC.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosCondC";
+    src: url("../fonts/Helios/HeliosCondC.eot");
+    src: local("HeliosCondC"),
+        url("../fonts/Helios/HeliosCondC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondC.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosCondLightC";
+    src: url("../fonts/Helios/HeliosCondLightC-Italic.eot");
+    src: local("HeliosCondLightC Italic"), local("HeliosCondLightC-Italic"),
+        url("../fonts/Helios/HeliosCondLightC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondLightC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondLightC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondLightC-Italic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosCondBlackC";
+    src: url("../fonts/Helios/HeliosCondBlackC.eot");
+    src: local("HeliosCondBlackC"),
+        url("../fonts/Helios/HeliosCondBlackC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCondBlackC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCondBlackC.woff") format("woff"),
+        url("../fonts/Helios/HeliosCondBlackC.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosThinC";
+    src: url("../fonts/Helios/HeliosThinC-Italic.eot");
+    src: local("HeliosThinC Italic"), local("HeliosThinC-Italic"),
+        url("../fonts/Helios/HeliosThinC-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosThinC-Italic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosThinC-Italic.woff") format("woff"),
+        url("../fonts/Helios/HeliosThinC-Italic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosC";
+    src: url("../fonts/Helios/HeliosC-Bold.eot");
+    src: local("HeliosC Bold"), local("HeliosC-Bold"),
+        url("../fonts/Helios/HeliosC-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosC-Bold.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosC-Bold.woff") format("woff"),
+        url("../fonts/Helios/HeliosC-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtC";
+    src: url("../fonts/Helios/HeliosExtC-BoldItalic.eot");
+    src: local("HeliosExtC Bold Italic"), local("HeliosExtC-BoldItalic"),
+        url("../fonts/Helios/HeliosExtC-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtC-BoldItalic.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtC-BoldItalic.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtC-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HeliosBlackC";
+    src: url("../fonts/Helios/HeliosBlackC.eot");
+    src: local("HeliosBlackC"),
+        url("../fonts/Helios/HeliosBlackC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosBlackC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosBlackC.woff") format("woff"),
+        url("../fonts/Helios/HeliosBlackC.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtThinC";
+    src: url("../fonts/Helios/HeliosExtThinC.eot");
+    src: local("HeliosExtThinC"),
+        url("../fonts/Helios/HeliosExtThinC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtThinC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtThinC.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtThinC.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosExtLightC";
+    src: url("../fonts/Helios/HeliosExtLightC.eot");
+    src: local("HeliosExtLightC"),
+        url("../fonts/Helios/HeliosExtLightC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosExtLightC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosExtLightC.woff") format("woff"),
+        url("../fonts/Helios/HeliosExtLightC.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HeliosCompressedC";
+    src: url("../fonts/Helios/HeliosCompressedC.eot");
+    src: local("HeliosCompressedC"),
+        url("../fonts/Helios/HeliosCompressedC.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Helios/HeliosCompressedC.woff2") format("woff2"),
+        url("../fonts/Helios/HeliosCompressedC.woff") format("woff"),
+        url("../fonts/Helios/HeliosCompressedC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Regular.eot");
+    src: local("Gilroy Regular"), local("Gilroy-Regular"),
+        url("../fonts/Gilory/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Regular.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Regular.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-ExtraboldItalic.eot");
+    src: local("Gilroy Extrabold Italic"), local("Gilroy-ExtraboldItalic"),
+        url("../fonts/Gilory/Gilroy-ExtraboldItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-ExtraboldItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-ExtraboldItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-ExtraboldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Bold.eot");
+    src: local("Gilroy Bold"), local("Gilroy-Bold"),
+        url("../fonts/Gilory/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Bold.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Bold.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Black.eot");
+    src: local("Gilroy Black"), local("Gilroy-Black"),
+        url("../fonts/Gilory/Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Black.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Black.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Light.eot");
+    src: local("Gilroy Light"), local("Gilroy-Light"),
+        url("../fonts/Gilory/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Light.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Light.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Semibold.eot");
+    src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+        url("../fonts/Gilory/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Semibold.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Semibold.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Medium.eot");
+    src: local("Gilroy Medium"), local("Gilroy-Medium"),
+        url("../fonts/Gilory/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Medium.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Medium.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-MediumItalic.eot");
+    src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"),
+        url("../fonts/Gilory/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-MediumItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-MediumItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-BlackItalic.eot");
+    src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"),
+        url("../fonts/Gilory/Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-BlackItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-BlackItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-UltraLight.eot");
+    src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"),
+        url("../fonts/Gilory/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-UltraLight.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-UltraLight.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-UltraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-RegularItalic.eot");
+    src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"),
+        url("../fonts/Gilory/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-RegularItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-RegularItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-RegularItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-SemiboldItalic.eot");
+    src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"),
+        url("../fonts/Gilory/Gilroy-SemiboldItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-SemiboldItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-SemiboldItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-SemiboldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-HeavyItalic.eot");
+    src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"),
+        url("../fonts/Gilory/Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-HeavyItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-HeavyItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-HeavyItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Extrabold.eot");
+    src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"),
+        url("../fonts/Gilory/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Extrabold.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Extrabold.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Extrabold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-BoldItalic.eot");
+    src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"),
+        url("../fonts/Gilory/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-BoldItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-BoldItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-UltraLightItalic.eot");
+    src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"),
+        url("../fonts/Gilory/Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-UltraLightItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-UltraLightItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-UltraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-LightItalic.eot");
+    src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"),
+        url("../fonts/Gilory/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-LightItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-LightItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Heavy.eot");
+    src: local("Gilroy Heavy"), local("Gilroy-Heavy"),
+        url("../fonts/Gilory/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Heavy.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Heavy.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Heavy.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-Thin.eot");
+    src: local("Gilroy Thin"), local("Gilroy-Thin"),
+        url("../fonts/Gilory/Gilroy-Thin.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-Thin.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-Thin.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilory/Gilroy-ThinItalic.eot");
+    src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"),
+        url("../fonts/Gilory/Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Gilory/Gilroy-ThinItalic.woff2") format("woff2"),
+        url("../fonts/Gilory/Gilroy-ThinItalic.woff") format("woff"),
+        url("../fonts/Gilory/Gilroy-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Biryani";
+    src: url("../fonts/Biryani/Biryani-Black.eot");
+    src: local("Biryani Black"), local("Biryani-Black"),
+        url("../fonts/Biryani/Biryani-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Biryani/Biryani-Black.woff2") format("woff2"), url("../fonts/Biryani/Biryani-Black.woff") format("woff"),
+        url("../fonts/Biryani/Biryani-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Biryani";
+    src: url("../fonts/Biryani/Biryani-Regular.eot");
+    src: local("Biryani Regular"), local("Biryani-Regular"),
+        url("../fonts/Biryani/Biryani-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Biryani/Biryani-Regular.woff2") format("woff2"), url("../fonts/Biryani/Biryani-Regular.woff") format("woff"),
+        url("../fonts/Biryani/Biryani-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Biryani";
+    src: url("../fonts/Biryani/Biryani-Bold.eot");
+    src: local("Biryani Bold"), local("Biryani-Bold"),
+        url("../fonts/Biryani/Biryani-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Biryani/Biryani-Bold.woff2") format("woff2"), url("../fonts/Biryani/Biryani-Bold.woff") format("woff"),
+        url("../fonts/Biryani/Biryani-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Biryani";
+    src: url("../fonts/Biryani/Biryani-SemiBold.eot");
+    src: local("Biryani SemiBold"), local("Biryani-SemiBold"),
+        url("../fonts/Biryani/Biryani-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Biryani/Biryani-SemiBold.woff2") format("woff2"), url("../fonts/Biryani/Biryani-SemiBold.woff") format("woff"),
+        url("../fonts/Biryani/Biryani-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Biryani";
+    src: url("../fonts/Biryani/Biryani-ExtraLight.eot");
+    src: local("Biryani ExtraLight"), local("Biryani-ExtraLight"),
+        url("../fonts/Biryani/Biryani-ExtraLight.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Biryani/Biryani-ExtraLight.woff2") format("woff2"),
+        url("../fonts/Biryani/Biryani-ExtraLight.woff") format("woff"),
+        url("../fonts/Biryani/Biryani-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Biryani";
+    src: url("../fonts/Biryani/Biryani-ExtraBold.eot");
+    src: local("Biryani ExtraBold"), local("Biryani-ExtraBold"),
+        url("../fonts/Biryani/Biryani-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Biryani/Biryani-ExtraBold.woff2") format("woff2"), url("../fonts/Biryani/Biryani-ExtraBold.woff") format("woff"),
+        url("../fonts/Biryani/Biryani-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Biryani";
+    src: url("../fonts/Biryani/Biryani-Light.eot");
+    src: local("Biryani Light"), local("Biryani-Light"),
+        url("../fonts/Biryani/Biryani-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Biryani/Biryani-Light.woff2") format("woff2"), url("../fonts/Biryani/Biryani-Light.woff") format("woff"),
+        url("../fonts/Biryani/Biryani-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-Bold.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-BoldItalic.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-Italic.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-Medium.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-Regular.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-Light.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-LightItalic.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-SemiBoldItalic.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-ExtraLight.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-MediumItalic.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-ExtraBoldItalic.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-ExtraBoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-SemiBold.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJacarta/PlusJakartaSans-ExtraLightItalic.woff2") format("woff2"),
+        url("../fonts/PlusJacarta/PlusJakartaSans-ExtraLightItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}

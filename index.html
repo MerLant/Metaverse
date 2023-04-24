@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Metaverse</title>
+        <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/fonts.css" />
+    </head>
+    <body>
+        <div class="first_scren">
+            <div class="container px-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <nav
+                            class="navbar navbar-expand-lg justify-content-between align-items-center"
+                        >
+                            <a class="navbar-brand" href="#"
+                                ><img class="nav-logo" src="./img/logo.svg" alt="logo"
+                            /></a>
+                            <button
+                                class="navbar-toggler border-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-icon"><img src="./img/nav.svg" alt="" /></span>
+                            </button>
+                            <ul
+                                class="navbar-nav collapse navbar-collapse justify-content-end align-items-start"
+                                id="navbarNav"
+                            >
+                                <li class="nav-item active-a text-lg-start">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">White paper</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Tokenomics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Road Map</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">How to buy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Buy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex hero__container px-lg-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 hero__row">
+                        <div class="hero d-flex justify-content-between flex-column">
+                            <div class="hero__text">
+                                <p class="hero__desc">Crafty Metaverse</p>
+                                <h1 class="hero__title">
+                                    A SHARED, IMMERSIVE MULTI-BLOCKCHAIN BASED METAVERSE ECOSYSTEM
+                                </h1>
+                            </div>
+                            <button class="hero__button">Invest Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script defer src="./js/bootstrap.min.js"></script>
+        <script>
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const heroContainer = document.querySelector(".hero__container");
+
+            navbarToggler.addEventListener("click", () => {
+                heroContainer.classList.toggle("d-none");
+            });
+        </script>
+    </body>
+</html>
