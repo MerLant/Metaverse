@@ -114,7 +114,6 @@ body {
 .hero {
     max-height: 509px;
     padding: 0;
-    background-image: url("../img/lineRectangle.svg");
 }
 
 .hero__row {
@@ -163,4 +162,14 @@ body {
 
 .hero__container {
     height: calc(110vh - 110px);
+}
+
+.about {
+    background-image: url("../img/about.png");
+    height: 100vh;
+    /* object-fit: cover; */
+    max-width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
