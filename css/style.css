@@ -59,9 +59,9 @@ body {
 .first_scren {
     background-image: url("../img/Hero.png");
     height: 100vh;
+    min-height: 460px;
     /* width: 120%; */
-    object-fit: cover;
-    max-width: 100%;
+    object-fit: contain;
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center center;
@@ -161,15 +161,269 @@ body {
 }
 
 .hero__container {
-    height: calc(110vh - 110px);
+    height: calc(100vh - 110px);
 }
 
 .about {
     background-image: url("../img/about.png");
     height: 100vh;
+    min-height: 700px;
     /* object-fit: cover; */
     max-width: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.about__container,
+.about__row {
+    height: 100%;
+}
+
+.about__block {
+    max-width: 774px;
+}
+
+.about__profile {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.about__title {
+    font-family: "HeliosExtC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 109%;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 16px 0;
+}
+
+.about__desc {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #ffffff;
+}
+
+.about__img {
+    padding: 0;
+    margin: 0;
+    margin-top: 64px;
+}
+
+.roadmap {
+    background-image: url("../img/roadmap.png");
+    height: 2174px;
+    max-width: 1912px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+
+
+.roadmap__container {
+    height: 100%;
+}
+
+.roadmap__desc {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.roadmap__h3 {
+    font-family: "HeliosExtC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 109%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+.roadmap__title {
+    padding-top: 50px;
+}
+
+.roadmap__q1 {
+    position: relative;
+    width: 479px;
+    left: calc(50% - 50px);
+    top: 100px;
+    color: #ffffff;
+}
+
+.roadmap__q2 {
+    position: relative;
+    width: 479px;
+    left: calc(50% - 400px); 
+    top: 200px;
+    color: #ffffff;
+}
+
+.roadmap__q3 {
+    position: relative;
+    width: 479px;
+    left: calc(50% - 70px);
+    top: 230px;
+    color: #ffffff;
+}
+
+.roadmap__q4 {
+    position: relative;
+    width: 479px;
+    left: calc(50% - 370px);
+    top: 450px;
+    color: #ffffff;
+}
+
+.roadmap__q_title {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    color: #ffffff;
+}
+
+.roadmap__q_ul {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    opacity: 0.8;
+    list-style-position: outside;
+    padding-left: 25px;
+}
+
+.roadmap__q_li {
+    padding: 0;
+    padding-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 5px;
+}
+
+.roadmap__q_more {
+    font-family: "HeliosExtC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 145%;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.roadmap__q_li:before {
+    content: url("../img/li.svg");
+    position: absolute;
+    top: 2px;
+    left: -25px;
+}
+
+@media (max-width: 991.98px) {
+    .roadmap {
+        height: 1800px;
+    }
+
+    .roadmap__q_ul {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        opacity: 0.8;
+    }
+    .roadmap__q_li {
+        padding-bottom: 5px;
+    }
+
+    .roadmap__q_title {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: #ffffff;
+    }
+
+    .roadmap__q_more {
+        font-family: "HeliosExtC";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 145%;
+        text-transform: capitalize;
+        color: #ffffff;
+    }
+
+    .roadmap__q1 {
+        position: relative;
+        width: 370px;
+        top: 170px;
+        left: calc(50% - 180px);
+    }
+
+    .roadmap__q2 {
+        position: relative;
+        width: 370px;
+        top: 230px;
+        left: calc(50% - 180px);
+    }
+
+    .roadmap__q3 {
+        position: relative;
+        width: 370px;
+        top: 350px;
+        left: calc(50% - 180px);
+    }
+    
+    .roadmap__q4 {
+        position: relative;
+        width: 370px;
+        top: 420px;
+        left: calc(50% - 180px);
+    }
+
+    .roadmap__q_more {
+        text-align: left;
+    }
+
+    .roadmap__q2 .roadmap__q_more {
+        text-align: center;
+    }
 }
